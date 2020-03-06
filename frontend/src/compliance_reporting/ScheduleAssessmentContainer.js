@@ -42,7 +42,7 @@ class ScheduleAssessmentContainer extends Component {
 
     const snap = mostRecentlyReviewed;
 
-    if (!snap) {
+    if (!snap || !snap.summary) {
       return <Loading />;
     }
 
